@@ -1,12 +1,12 @@
 print("=== CONVERSOR DE TEMPERATURAS ===")
-print("1 - Celsius para Fahrenheit")
-print("2 - Fahrenheit para Celsius")
-print("3 - Celsius para Kelvin")
-print("4 - Kelvin para Celsius")
-print("5 - Fahrenheit para Kelvin")
-print("6 - Kelvin para Fahrenheit")
+print("6 - Celsius para Fahrenheit")
+print("5 - Fahrenheit para Celsius")
+print("4 - Celsius para Kelvin")
+print("3 - Kelvin para Celsius")
+print("2 - Fahrenheit para Kelvin")
+print("1 - Kelvin para Fahrenheit")
 
-opcao = int(input("Escolha uma opção: "))
+opcao = int(input("Escolha uma opção 1 a 6: "))
 temperatura = float(input("Digite a temperatura: "))
 
 if opcao == 1:
