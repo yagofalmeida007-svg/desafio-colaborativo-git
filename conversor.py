@@ -1,37 +1,45 @@
 print("=== CONVERSOR DE TEMPERATURAS ===")
-print("6 - Celsius para Fahrenheit")
-print("5 - Fahrenheit para Celsius")
-print("4 - Celsius para Kelvin")
-print("3 - Kelvin para Celsius")
-print("2 - Fahrenheit para Kelvin")
-print("1 - Kelvin para Fahrenheit")
 
-opcao = int(input("Escolha uma opção 1 a 6: "))
-temperatura = float(input("Digite a temperatura: "))
+while True:
+    print("6 - Celsius para Fahrenheit")
+    print("5 - Fahrenheit para Celsius")
+    print("4 - Celsius para Kelvin")
+    print("3 - Kelvin para Celsius")
+    print("2 - Fahrenheit para Kelvin")
+    print("1 - Kelvin para Fahrenheit")
+    print("0 - Sair")
 
-if opcao == 1:
-    resultado = (temperatura * 9 / 5) + 32
-    print("Resultado:", resultado, "°F")
+    opcao = int(input("Escolha uma opção de 1 a 6 ou 0 para sair: "))
 
-elif opcao == 2:
-    resultado = (temperatura - 32) * 5 / 9
-    print("Resultado:", resultado, "°C")
+    if opcao == 0:
+        print("Programa encerrado.")
+        break
 
-elif opcao == 3:
-    resultado = temperatura + 273.15
-    print("Resultado:", resultado, "K")
+    temperatura = float(input("Digite a temperatura: "))
 
-elif opcao == 4:
-    resultado = temperatura - 273.15
-    print("Resultado:", resultado, "°C")
+    if opcao == 1:
+        resultado = (temperatura * 9 / 5) + 32
+        print("Resultado:", resultado, "°F")
 
-elif opcao == 5:
-    resultado = (temperatura - 32) * 5 / 9 + 273.15
-    print("Resultado:", resultado, "K")
+    elif opcao == 2:
+        resultado = (temperatura - 32) * 5 / 9
+        print("Resultado:", resultado, "°C")
 
-elif opcao == 6:
-    resultado = (temperatura - 273.15) * 9 / 5 + 32
-    print("Resultado:", resultado, "°F")
+    elif opcao == 3:
+        resultado = temperatura + 273.15
+        print("Resultado:", resultado, "K")
 
-else:
-    print("Opção inválida.")
+    elif opcao == 4:
+        resultado = temperatura - 273.15
+        print("Resultado:", resultado, "°C")
+
+    elif opcao == 5:
+        resultado = (temperatura - 32) * 5 / 9 + 273.15
+        print("Resultado:", resultado, "K")
+
+    elif opcao == 6:
+        resultado = (temperatura - 273.15) * 9 / 5 + 32
+        print("Resultado:", resultado, "°F")
+
+    else:
+        print("Opção inválida.")
